@@ -4,12 +4,12 @@ import "./UserWrapper.css";
 import AddUser from "../addUser/AddUser";
 import LoginUser from "../loginUser/LoginUser";
 
-const UserWrapper = () => {
+const UserWrapper = ({user, setUser}) => {
     return (
      <div className="user-wrapper">
         <p>UserWrapper</p>
-        <AddUser />
-        <LoginUser/>
+        <AddUser user={user} setUser={setUser}/>
+        <LoginUser user={user} setUser={setUser}/>
      </div>
     );
 };
