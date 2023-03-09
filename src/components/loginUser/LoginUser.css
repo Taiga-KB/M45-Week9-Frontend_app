@@ -1,0 +1,12 @@
+.loginuser-wrapper {
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    border: 2px solid burlywood
+};
+
+.login-user-form {
+    display: flex;
+    flex-flow: column;
+    height: 30vh;
+};
