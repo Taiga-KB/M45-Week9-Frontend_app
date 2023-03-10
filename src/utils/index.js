@@ -49,6 +49,7 @@ export const loginUser = async (username, password, setUser) => {
 export const getAllUsers = async () => {
     try {
         const token = getTokenFromCookie("jwt_token");
+        console.log("get all users cookie:", token)
         const response = await fetch("http://localhost/users/getallusers", {
             method: "GET",
             mode: "cors",
@@ -57,6 +58,7 @@ export const getAllUsers = async () => {
                 Authorization: `Bearer ${token}`,
             },
         });
+        console.log("get all users response:", response);
         const data = await response.json();
         console.log("getallusers data", data);
         return data.users;

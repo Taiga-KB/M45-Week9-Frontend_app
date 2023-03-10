@@ -4,7 +4,7 @@ export  const writeCookie = (key, value, days = 365) => {
     date.setDate(date.getDate() + days);
 
     const cookie = (document.cookie = 
-        key = "=" + value + "; expires" + date.toGMTString() + "; path=/");
+        key + "=" + value + "; expires" + date.toGMTString() + "; path=/");
 
         console.log("cookie in utils/index.js:", cookie);
 
