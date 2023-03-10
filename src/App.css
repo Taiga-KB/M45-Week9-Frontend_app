@@ -1,3 +1,9 @@
-.App {
+.App-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-}
+  width: 100%;
+  border: 2px solid rgb(119, 30, 30);
+};
